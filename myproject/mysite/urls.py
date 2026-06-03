@@ -19,7 +19,6 @@ from django.urls import path, include
 from polls import views
 
 urlpatterns = [
-    path('', views.landingPage, name='landingPage'),
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
 ]
